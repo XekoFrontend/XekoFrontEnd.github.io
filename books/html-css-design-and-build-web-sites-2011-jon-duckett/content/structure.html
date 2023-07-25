@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>HTML & CSS Design and build Websites - My notes</title>
+  </head>
+  <body>
+    <h1 id="top">Notes</h1>
+    <ol>
+      <li><a href="#structure">Structure</a></li>
+      <li><a href="#text">Text</a></li>
+    </ol>
+    <a href="#bottom">Bottom</a>
+    <h2 id="structure">Structure</h2>
+    <p>
+      In CSS, both `background` and `background-image` properties can be used to
+      set a background image or a combination of background styles, including
+      gradients. However, they serve different purposes and offer different
+      levels of control over the background presentation. 1. `background-image`:
+      The `background-image` property is specifically used to set a single
+      background image to an element. This property is well-suited for cases
+      where you want to use an image as the background and do not need
+      additional background styles like gradients or colors. Here's an example
+      of using `background-image` with a linear gradient: ```css .element {
+      background-image: linear-gradient(to bottom, #ff0000, #00ff00); } ``` In
+      this example, the background image will be a linear gradient from red
+      (`#ff0000`) at the top to green (`#00ff00`) at the bottom. The
+      `background-image` property can also take other types of image sources,
+      like URLs pointing to image files. 2. `background`: The `background`
+      property is a shorthand property that allows you to apply multiple
+      background-related styles at once. It can include not only a background
+      image but also other background properties like color, gradient, position,
+      repeat, and attachment. Here's an example using `background` with a linear
+      gradient: ```css .element { background: linear-gradient(to bottom,
+      #ff0000, #00ff00); } ``` The above code is equivalent to setting just the
+      `background-image`, but with `background`, you have the flexibility to
+      include additional background-related styles if needed: ```css .element {
+      background: linear-gradient(to bottom, #ff0000, #00ff00) center/cover
+      no-repeat fixed; } ``` In this example, the linear gradient will be
+      centered, covering the element without repeating, and will remain fixed
+      while scrolling the page. In summary, the main difference between
+      `background` and `background-image` is that `background` is a shorthand
+      property that allows you to set multiple background styles at once,
+      including gradients, colors, image sources, positions, repeat, and
+      attachment. On the other hand, `background-image` is specifically used to
+      set a single background image or gradient. If you only need to apply a
+      gradient, you can use either property, but if you need more
+      background-related styles, `background` provides a more comprehensive
+      solution.
+    </p>
+
+    <h2 id="text">Text</h2>
+    <p>
+      In CSS, both `background` and `background-image` properties can be used to
+      set a background image or a combination of background styles, including
+      gradients. However, they serve different purposes and offer different
+      levels of control over the background presentation. 1. `background-image`:
+      The `background-image` property is specifically used to set a single
+      background image to an element. This property is well-suited for cases
+      where you want to use an image as the background and do not need
+      additional background styles like gradients or colors. Here's an example
+      of using `background-image` with a linear gradient: ```css .element {
+      background-image: linear-gradient(to bottom, #ff0000, #00ff00); } ``` In
+      this example, the background image will be a linear gradient from red
+      (`#ff0000`) at the top to green (`#00ff00`) at the bottom. The
+      `background-image` property can also take other types of image sources,
+      like URLs pointing to image files. 2. `background`: The `background`
+      property is a shorthand property that allows you to apply multiple
+      background-related styles at once. It can include not only a background
+      image but also other background properties like color, gradient, position,
+      repeat, and attachment. Here's an example using `background` with a linear
+      gradient: ```css .element { background: linear-gradient(to bottom,
+      #ff0000, #00ff00); } ``` The above code is equivalent to setting just the
+      `background-image`, but with `background`, you have the flexibility to
+      include additional background-related styles if needed: ```css .element {
+      background: linear-gradient(to bottom, #ff0000, #00ff00) center/cover
+      no-repeat fixed; } ``` In this example, the linear gradient will be
+      centered, covering the element without repeating, and will remain fixed
+      while scrolling the page. In summary, the main difference between
+      `background` and `background-image` is that `background` is a shorthand
+      property that allows you to set multiple background styles at once,
+      including gradients, colors, image sources, positions, repeat, and
+      attachment. On the other hand, `background-image` is specifically used to
+      set a single background image or gradient. If you only need to apply a
+      gradient, you can use either property, but if you need more
+      background-related styles, `background` provides a more comprehensive
+      solution.
+    </p>
+
+    <h2 id="bottom">Bottom</h2>
+    <p><a href="#top">Top</a></p>
+  </body>
+</html>
