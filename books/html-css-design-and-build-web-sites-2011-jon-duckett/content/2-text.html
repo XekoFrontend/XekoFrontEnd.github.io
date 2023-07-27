@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      HTML & CSS Design and build Websites - Chapter 2: Text - My notes
+    </title>
+  </head>
+  <body>
+    <!-- /.Group3 -->
+    <h2>Basic</h2>
+    <ol>
+      <li>Headings</li>
+      <ul>
+        <li>&lt;h1&gt;: Heading has six "levels" h1, h2, h3, h4, h5, h6 <p>
+          <h1>This is a heading</h1>
+          <h2>This is a subheading</h2>
+          <h3>This is a sub-subheading</h3>
+          <h4>This is a sub-sub-subheading</h4>
+          <h5>This is a sub-sub-sub-subheading</h5>
+          <h6>This is a sub-sub-sub-sub-subheading</h6></p>
+        </li>
+      </ul>
+      <li>Paragraphs</li>
+      <ul>
+        <li>&lt;p&gt;: Paragraphs
+          <p><cite><code>&lt;pre&gt;</code> element represents preformatted text which is to be presented exactly as written in the <abbr title="Hypertext Markup Language">HTML</abbr> file.</cite></p>
+          <p><cite><code>&lt;code&gt;</code> element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code.</cite></p>
+        </li>
+      </ul>
+      <li>Bold & Italic        </li>
+      <ul>
+        <li>&lt;b&gt;: <b>Bold</b>: element does not imply any additional meaning</li>
+        <li>&lt;i&gt;: <i>Italic</i>: element does not imply any additional meaning. <br></li>
+      </ul>
+      <li>Superscript & Subscrip</li>
+      <ul>
+        <li>&lt;sup&gt;: The Superscript element -> E=mc<sup>2</sup></li>
+        <li>&lt;sub&gt;: The Subscript element -> CO<sub>2</sub></li>
+      </ul>
+      <li>Line Breaks & Horizontal Rules</li>
+      <ul>
+        <li>&lt;br /&gt;: Line <br> Breaks</li>
+        <li>&lt;hr /&gt;: <hr></li>
+      </ul>
+    </ol>
+    <h2>Semantic Markup    </h2>
+    <cite> They do add extra information to the 
+      pages.<br>You <strong>should not 
+      use them to change the way that 
+      your text looks</strong>; their <strong>purpose is 
+      to describe the content</strong> of your 
+      web pages more accurately.<br>The reason for using these 
+      elements is that <strong>
+        other programs,
+        such as <dfn>screen readers</dfn> or <dfn>
+          search
+          engines
+        </dfn>, can use this extra
+        information
+      </strong>. For example, <em>
+        the
+        voice of a <dfn>screen readers</dfn> may add
+        emphasis to the words inside
+        the &lt;em&gt; element
+      </em>, or a <dfn>search engine</dfn> might register that your 
+      page features a quote if you use 
+      the &lt;blockquote&gt; element.</cite>
+    <ol>
+      <!-- /.Group3 -->
+      <li>Strong & Emphasis
+      </li>
+      <ul>
+        <li>&lt;strong&gt;: <strong>Strong</strong>importance</li>
+        <li>&lt;em&gt;: <em>Emphasis</em> (sự nhấn mạnh)</li>
+      </ul><li>Quotations</li>
+      <ul>
+        <li>&lt;blockquote&gt; <blockquote>The <code>&lt;blockquote&gt;</code> element is 
+          used for <em>longer quotes</em> that take 
+          up an entire paragraph. Note 
+          how the <code>&lt;p&gt;</code> element is still 
+          used inside the <code>&lt;blockquote&gt;</code>
+          element. 
+          Browsers tend to indent the 
+          contents of the <code>&lt;blockquote&gt;</code>
+          element, however you <strong>
+            should not
+            use this element just to indent a
+            piece of text — rather you should
+            achieve this effect using CSS
+          </strong>. </blockquote><p>It usually has an additional <b><i>footer or cite</i></b> tag to indicate the source author or work.</p></li>
+        <li>&lt;q&gt;: element is used for 
+          <em>shorter quotes</em> that sit within 
+          a paragraph.<br>Both elements may use the 
+          
+            <i><b>cite</b></i> attribute:<q cite="#"> &lt;q cite="https://htmlandcssbook.com/code-samples/"&gt;</q>            
+           to indicate where the
+          quote is from. Its value should
+          be a URL
+           that will have more 
+          information about the source of 
+          the quotation.</li>
+      </ul>
+      <li>Abbreviations</li>
+      <ul>
+        <li>&lt;abbr&gt;: A <b><i><abbr title="&lt;abbr title=&quot;các từ viết tắt&quot;&gt;">title</abbr></i></b>
+          attribute on the opening tag is 
+          used to specify the full term.</li>
+      </ul>
+      <li>Citations &
+        Definitions
+        </li>
+        <ul>
+          <li>&lt;cite&gt;: When you are <strong>
+            referencing a
+              piece of work such as a book,
+              film or research.
+          </strong> <p>It must include the title of the work or <b>the name of the author (person, people or organization) or an URL reference</b>, which may be in an abbreviated form as per the conventions used for the addition of citation metadata</p></li>
+          <li>&lt;dfn&gt;: explain some 
+            new <dfn title="thuật ngữ">terminology</dfn> (perhaps an 
+            <dfn title="khái niệm học thuật, từ ngữ chuyên môn">academic concept</dfn> or some 
+            <dfn title="biệt ngữ, tiếng nói khó hiểu">jargon</dfn>) in a document. It has <b><i>title</i></b> attribute.</li>
+        </ul>
+    </ol>
+
+<!-- /.Group3 -->
+    <h2>Author Details    </h2>
+    <ol>
+      <li>&lt;cite&gt;: to contain 
+        contact details for the author of 
+        the page. E.g:<code>&lt;address&gt;
+          &lt;p&gt;&lt;a href=&quot;mailto:homer@example.org&quot;&gt;homer@example.org&lt;/a&gt;&lt;/p&gt; &lt;p&gt;742 Evergreen Terrace, Springfield.&lt;/p&gt;
+          &lt;/address&gt;</code><p>Online extra hCards: https://htmlandcssbook.com/extras/introduction-to-hcard/</p></li>
+    </ol>
+<!-- /.Group3 -->
+<h2>Author Details    </h2>
+<ol>
+  <li>Changes to content</li>
+  <ol>
+<li>&lt;ins&gt;:  has been 
+  <ins>inserted</ins></li>
+<li>&lt;del&gt;:  has been <del>deleted</del></li>
+<li>&lt;s&gt;:  element indicates 
+  something that is <s>
+    no longer
+    accurate or relevant
+  </s> (but that 
+  should not be deleted).</li>
+  </ol>
+</ol>
+    <p>Encode and decode a piece of text to its HTML equivalent
+      <ol>
+        <li>https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder</li>
+        <li>https://www.w3docs.com/tools/html-encoder/</li>
+        <li>https://stackoverflow.com/questions/784586/convert-special-characters-to-html-in-javascript</li>
+      </ol></p>
+  </body>
+</html>
