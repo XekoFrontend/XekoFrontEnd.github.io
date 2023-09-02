@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/XuHaoCode/xuhaocode.github.io/tree/main/books/practical-ui/01)
+- [Solution](https://github.com/XekoFrontend/XekoFrontEnd.github.io/tree/b9c085e72ae7bb3281e8c00395ccb0002dafe8e0/books/Practical-UI/01-booking-card)
 - [Live version](https://xekofrontend.github.io/books/practical-ui/01-booking-card/index.html)
 
 ## My process
