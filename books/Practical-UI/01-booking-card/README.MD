@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - [Solution](https://github.com/XuHaoCode/xuhaocode.github.io/tree/main/books/practical-ui/01)
-- [Live version](https://xuhaocode.github.io/books/practical-ui/01/index.html)
+- [Live version](https://xekofrontend.github.io/books/practical-ui/01-booking-card/index.html)
 
 ## My process
 
