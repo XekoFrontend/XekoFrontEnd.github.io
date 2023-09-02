@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Booking card component</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -12,67 +12,148 @@
   </head>
   <body>
     <main>
-      <!-- <i class="bx bx-x"></i>
-      <i class="bx bx-check"></i> -->
-      <section class="booking boolking-1">
-        <div class="slideshow">
-          <i class="bx bx-left-arrow-alt"></i>
-          <span class="slideshow-number">1 / 8</span>
-          <img
-            src="img/dalat-retreat.jpeg"
-            alt="landscape photography of hills under foggy sky"
-          />
-        </div>
-        <div class="booking-main">
-          <div class="header-booking">
-            <h1>Da Lat retreat</h1>
-            <p class="address">Da Lat, Lam Dong, Vietnam</p>
-            <div class="rating">
-              <div class="rating-stars">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-              <span class="score">5.0</span>
-              <span class="reviews"><a href="#">(38 reviews)</a></span>
-            </div>
-          </div>
-          <div class="services">
-            <div class="service">
-              <i class="bx bx-home"></i>
-              <span>House</span>
-            </div>
-            <div class="service">
-              <i class="bx bx-bed"></i>
-              <span>2 beds</span>
-            </div>
-            <div class="service">
-              <i class="bx bx-bath"></i>
-              <span>1 bath</span>
-            </div>
-            <div class="service">
-              <i class="bx bxs-car-garage"></i>
-              <span>1 garage</span>
-            </div>
-          </div>
+      <div class="card-wrapper">
+        <!-- Checking icons -->
+        <i class="bx bx-x"></i>
+        <i class="bx bx-check"></i>
 
-          <p class="booking-content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
-            illo tempore, excepturi eos voluptas atque hic assumenda minus
-            architecto repellendus. Laborum officia repudiandae nisi, ad
-            repellat aspernatur quod velit blanditiis!
-          </p>
-        </div>
-        <div class="booking-footer">
-          <button class="booking-btn booking-btn-1">Book now</button>
-          <p><span class="pricing">$199.00</span>/ night</p>
-        </div>
-      </section>
-      <section>
-        <!-- https://boxicons.com/usage https://unsplash.com/photos/A6Fg9OvGkpI -->
-      </section>
+        <!-- LEFT CARD -->
+        <article class="booking-card card-left">
+          <div class="booking-card--gallery">
+            <i class="bx bx-left-arrow-alt gallery--btn"></i>
+            <div class="left-card--page-number">
+              <i class="bx bxs-circle"></i>
+              <i class="bx bx-circle"></i>
+              <i class="bx bx-circle"></i>
+              <i class="bx bx-radio-circle"></i>
+            </div>
+            <picture class="gallery--img">
+              <img
+                src="img/dalat-retreat-lighter.jpg"
+                alt="a group of chairs outside"
+              />
+            </picture>
+          </div>
+          <div class="booking-card--content">
+            <div class="booking-info left-card--info">
+              <h1 class="booking-title left-card--title">Da Lat retreat</h1>
+              <p class="booking-address left-car-address">
+                Da Lat, Lam Dong, Vietnam
+              </p>
+              <div class="rating left-card--rating">
+                <div class="rating--stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <p class="rating--score">
+                  <span class="visually-hidden">Average Reviewer Score:</span
+                  >5.0
+                </p>
+                <p class="rating--number-reviews">
+                  <a href="#" title="Go to read reviews">(38 reviews)</a>
+                </p>
+              </div>
+            </div>
+            <div class="services left-card--services">
+              <div class="services-item">
+                <i class="bx bx-home"></i>
+                <p>House</p>
+              </div>
+              <div class="services-item">
+                <i class="bx bx-bed"></i>
+                <p>2 beds</p>
+              </div>
+              <div class="services-item">
+                <i class="bx bx-bath"></i>
+                <p>1 bath</p>
+              </div>
+              <div class="services-item">
+                <i class="bx bxs-car-garage"></i>
+                <p>1 garage</p>
+              </div>
+            </div>
+            <p class="card-description left-card--description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptates, aliquam exercitationem deleniti odit fugiat dolorum ut
+              temporibus! Rem nihil animi tenetur voluptatum assumenda aliquam
+              similique, error odio officia nostrum veritatis.
+            </p>
+          </div>
+          <div class="pricing-and-booking left-card--pricing-and-booking">
+            <button class="button left-card--btn">Book now</button>
+            <p>
+              <span class="booking-price left-card--price">$199.00</span> /
+              night
+            </p>
+          </div>
+        </article>
+
+        <!-- RIGHT CARD -->
+        <article class="booking-card card-right">
+          <div class="booking-card--gallery">
+            <i class="bx bx-left-arrow-alt gallery--btn"></i>
+            <p class="gallery--page-number">1 / 8</p>
+            <picture class="gallery--img">
+              <img
+                src="img/dalat-retreat-darker.jpg"
+                alt="a group of chairs outside"
+              />
+            </picture>
+          </div>
+          <div class="booking-card--content">
+            <div class="booking-info">
+              <h1 class="booking-title">Da Lat retreat</h1>
+              <p class="booking-address">Da Lat, Lam Dong, Vietnam</p>
+              <div class="rating">
+                <div class="rating--stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <p class="rating--score">
+                  <span class="visually-hidden">Average Reviewer Score:</span
+                  >5.0
+                </p>
+                <p class="rating--number-reviews">
+                  <a href="#" title="Go to read reviews">(38 reviews)</a>
+                </p>
+              </div>
+            </div>
+            <div class="services">
+              <div class="services-item">
+                <i class="bx bx-home"></i>
+                <p>House</p>
+              </div>
+              <div class="services-item">
+                <i class="bx bx-bed"></i>
+                <p>2 beds</p>
+              </div>
+              <div class="services-item">
+                <i class="bx bx-bath"></i>
+                <p>1 bath</p>
+              </div>
+              <div class="services-item">
+                <i class="bx bxs-car-garage"></i>
+                <p>1 garage</p>
+              </div>
+            </div>
+            <p class="card-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+              illo tempore, excepturi eos voluptas atque hic assumenda minus
+              architecto repellendus.
+            </p>
+          </div>
+          <div class="pricing-and-booking">
+            <button class="button right-card--btn">Book now</button>
+            <p><span class="booking-price">$199.00</span> / night</p>
+          </div>
+        </article>
+      </div>
     </main>
   </body>
 </html>
