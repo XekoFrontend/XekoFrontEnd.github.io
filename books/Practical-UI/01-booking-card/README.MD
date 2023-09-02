@@ -27,8 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot of the Practical UI book - page 16](img/Web%20capture_27-8-2023_11380_.jpg)
-![screenshot of my solution](img/Web%20capture_2-9-2023_11859_127.0.0.1.jpeg)
+![screenshot of my solution](img/Web%20capture_2-9-2023_11859_127.0.0.1.jpg)
 
 ### Links
 
@@ -55,5 +54,6 @@ Users should be able to:
 
 ### References
 
-- Design: [Practical UI book](https://www.practical-ui.com/)
+- UI: [Practical UI book](https://www.practical-ui.com/)
+  - Screenshot of the original design: [page 16](img/Web%20capture_27-8-2023_11380.jpg)
 - Tutorial: [Kevin Powell - Youtube](https://www.youtube.com/watch?v=B2WL6KkqhLQ)

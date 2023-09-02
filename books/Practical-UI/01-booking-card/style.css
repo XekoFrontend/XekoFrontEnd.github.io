@@ -415,7 +415,7 @@ a:active {
 
 .card-left {
   position: relative;
-  height: 866px;
+  /* height: 866px; */
 }
 
 .left-card--pricing-and-booking {
