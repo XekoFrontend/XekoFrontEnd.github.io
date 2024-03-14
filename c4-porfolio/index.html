@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="author" content="Xeko Frontend" />
+    <meta
+      name="description"
+      content="The portfolio project for the HTML and CSS in-depth course by Meta"
+    />
+    <title>Mangata & Gallo - Jewelry store</title>
     <link rel="stylesheet" href="style.css" />
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +25,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/2dbb959ced.js"
@@ -36,39 +44,39 @@
           <i class="bx bx-search"></i>
           <i class="bx bx-heart"></i>
           <i class="bx bx-shopping-bag"></i>
-
           <i class="bx bx-user"></i>
           <i class="bx bx-chevron-down">En</i>
         </div>
       </div>
       <header>
         <img
-          class="logo-img"
+          class="logo-top"
           src="img/Asset 3@3x.png"
           alt="Mangata and Gallo Logo"
         />
       </header>
+
       <nav>
-        <ul class="menu">
+        <menu class="menu">
           <li><a href="#" alt="Homepage">Homepage</a></li>
           <li><a href="#" alt="Products">Products</a></li>
           <li><a href="#" alt="Contact">Contact</a></li>
           <li><a href="#" alt="Info">Info</a></li>
-        </ul>
+        </menu>
       </nav>
+
       <main>
-        <div class="discount-banner">
+        <div class="promotion">
           <h2>30% Off - Lunar New Year!</h2>
-          <p>
-            <strong>Mangata and Gallo</strong> is a jewelry store that
-            specializes in special occasions like engagements, weddings and
-            anniversaries.
-          </p>
-          <p>
-            Mangata & Gallo's selection of jewelry is known for its high-quality
-            and classic look.
-          </p>
-          <p class="btn btn-more">Discover More</p>
+          <article>
+            Mangata and Gallo is a online jewelry store that specializes in
+            special occasions like
+            <em>engagements, weddings and anniversaries.</em><br />
+
+            Mangata & Gallo's selection of jewelry is known for its
+            <em>high-quality and classic look.</em>
+          </article>
+          <button class="btn btn-discover">Discover More</button>
           <div class="gallery-icon">
             <i class="bx bxs-circle"></i>
             <i class="bx bx-circle"></i>
@@ -76,27 +84,31 @@
           </div>
         </div>
 
-        <!-- <div class="product"> -->
         <div class="product-1 card">
-          <h2>Luxury Jewelry</h2>
+          <h2>Diamond Necklace</h2>
           <img src="img/product-1.jpg" alt="" />
           <p class="price">199.99$ <span class="price-old">300$</span></p>
-          <p class="btn btn-addCard">Add to card</p>
+          <button class="btn btn-addCard">Add to card</button>
         </div>
         <div class="product-2 card">
-          <h2>Luxury Jewelry</h2>
+          <h2>Hoop Earrings</h2>
           <img src="img/product-2.jpg" alt="" />
-          <p class="price">599.990$ <span class="price-old">900$</span></p>
-          <p class="btn btn-addCard">Add to card</p>
+          <p class="price">299.99$ <span class="price-old">500$</span></p>
+          <button class="btn btn-addCard">Add to card</button>
         </div>
         <div class="product-3 card">
-          <h2>Luxury Jewelry</h2>
+          <h2>Luna Collection</h2>
           <img src="img/product-3.jpg" alt="" />
-          <p class="price">299.99$ <span class="price-old">500$</span></p>
-          <p class="btn btn-addCard">Add to card</p>
+          <p class="price">599.990$</p>
+          <button class="btn btn-addCard">Add to card</button>
         </div>
-        <!-- </div> -->
+
+        <div class="load-more">
+          <p>You've Viewed 3 of 24 Products.</p>
+          <i class="bx bx-plus-circle"></i>
+        </div>
       </main>
+
       <footer>
         <div class="legal-link">
           <a href="#">Membership</a>
@@ -104,7 +116,7 @@
           <a href="#">Privacy</a>
           <a href="#">Policy</a>
         </div>
-        <img src="img/Asset 2@3x.png" alt="" />
+        <img class="logo-bottom" src="img/Asset 2@3x.png" alt="" />
         <div class="icon-social-network">
           <i class="bx bxl-instagram"></i>
           <i class="bx bxl-pinterest-alt"></i>
