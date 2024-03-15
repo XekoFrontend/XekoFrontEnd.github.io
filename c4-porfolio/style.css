@@ -60,7 +60,9 @@ a:active {
   color: #9d7860;
 }
 
-.btn {
+.btn,
+.btn:link,
+.btn:visited {
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 1em 0;
@@ -121,12 +123,7 @@ header {
   flex-wrap: wrap;
 }
 
-.payment {
-  display: flex;
-  column-gap: 0.75em;
-  flex-wrap: wrap;
-}
-
+.payment,
 .user-nav {
   display: flex;
   column-gap: 0.75em;
@@ -152,16 +149,12 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  grid-gap: 1rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .promotion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 2rem;
-
-  position: relative;
   color: var(--clr-font-light);
   letter-spacing: 0.05em;
   line-height: 1.5;
@@ -173,13 +166,11 @@ main {
   background-blend-mode: multiply;
 }
 
-.promotion > h2 {
-  margin-bottom: 2rem;
-  align-self: flex-start;
+.promotion > * {
+  margin-top: 2rem;
 }
 
 .btn-discover {
-  margin: 2rem 0;
   color: var(--clr-font-light);
 }
 
@@ -187,8 +178,10 @@ main {
   text-align: center;
 }
 
+/* ### */
+
 .card {
-  min-width: 100%;
+  min-width: 150px;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -252,12 +245,8 @@ footer {
   flex-direction: column;
   align-items: center;
   row-gap: 1rem;
-  padding: 2rem 0;
+  padding: 2rem 0.25rem;
   border-top: 1px solid var(--clr-tear-light);
-}
-
-.legal-link {
-  text-align: center;
 }
 
 .legal-link a::after {
@@ -284,7 +273,7 @@ footer {
 /* CHAT */
 
 .bx-chat {
-  color: white;
+  color: var(--clr-font-light);
   font-size: var(--fs-500);
   padding: 1rem;
   background-color: var(--clr-neutral);
